@@ -6,7 +6,7 @@
 
 Inspired by the research paper: [NFT Wash Trading: Quantifying suspicious behaviour in NFT markets](https://arxiv.org/abs/2202.03866), this agent monitors the following NFT collection's sales on the specified exchange for wash trades:
 
-```json
+```javascript
 {
   "nftCollectionName": "Meebits",
   "nftCollectionAddress": "0x7Bd29408f11D2bFC23c34f18275bBf23bB716Bc7", // Any ERC-721 Contract

@@ -8,7 +8,7 @@ Inspired by the research paper: [NFT Wash Trading: Quantifying suspicious behavi
 
 Update the `src/agent-config.json` to monitor a NFT collection of your choosing on either the LooksRare or OpenSea exchange. 
 
-```json
+```javascript
 {
   "nftCollectionName": "Meebits",
   "nftCollectionAddress": "0x7Bd29408f11D2bFC23c34f18275bBf23bB716Bc7", // Any ERC-721 Contract
