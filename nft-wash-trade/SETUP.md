@@ -19,7 +19,15 @@ Update the `src/agent-config.json` to monitor a NFT collection of your choosing 
 ### Step 2: Check that your agent config is valid. 
 
 ```bash
-$ ./node_modules/.bin/ajv validate -s schemas/agent-config.json -d src/agent-config.json
+$ npm run validate-config
+
+> nft-wash-trade@0.0.1 validate-config
+> npm run build && ajv validate -s schemas/agent-config.json -d src/agent-config.json
+
+
+> nft-wash-trade@0.0.1 build
+> tsc
+
 src/agent-config.json valid
 ```
 

@@ -19,7 +19,8 @@
     "disable": "forta-agent disable",
     "enable": "forta-agent enable",
     "keyfile": "forta-agent keyfile",
-    "test": "jest"
+    "test": "jest",
+    "validate-config": "npm run build && ajv validate -s schemas/agent-config.json -d src/agent-config.json"
   },
   "dependencies": {
     "bignumber.js": "^9.0.1",
