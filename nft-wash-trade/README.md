@@ -31,7 +31,7 @@ More specifically, the agent detects wallet addresses that bought the same Meebi
 
 - Only the latest 50 sales for an NFT will be tracked. Old sales will be removed to make room for new sales. 
 - If the last NFT sale is over 30 days old, old sales history will be wiped for that particular NFT.
-- Maximum of 100,000 NFTs with the latest sales will be tracked. NFT with the least activity will be removed to make for NFT with latest sales. 
+- Maximum of 100,000 NFTs with the latest sales will be tracked. NFT with the least activity will be removed to make room for NFT with latest sales. 
 
 ## Test Data
 
@@ -48,14 +48,15 @@ $ npm run tx 0xd033cb4b4609b47c224d6143ee7e9102ec9df74a6b196a5e72ed3622f1c103d8,
   "severity": "Medium",
   "type": "Suspicious",
   "metadata": {
-    "exchangeContract": "0x59728544B08AB483533076417FbBB2fD0B17CE3a",
-    "collectionContract": "0x7Bd29408f11D2bFC23c34f18275bBf23bB716Bc7",
-    "tokenId": "13531",
     "buyer": "0xc32575Be004af0843D995D6139BBeB9F8085D970",
+    "tokenId": "13531",
+    "collectionContract": "0x7Bd29408f11D2bFC23c34f18275bBf23bB716Bc7",
+    "collectionName": "Meebits",
+    "exchangeContract": "0x59728544B08AB483533076417FbBB2fD0B17CE3a",
+    "exchangeName": "LooksRare",
     "salesCountSoFar": "2",
     "firstSaleTimestampTracked": "Tue, 01 Mar 2022 05:24:48 GMT",
     "salesHistory": "buyer 0xc32575Be004af0843D995D6139BBeB9F8085D970 at Tue, 01 Mar 2022 05:24:48 GMT -> buyer 0x2EdaDfb25586B1E4d6623C7021E76A2Fa595cdEc at Tue, 01 Mar 2022 05:33:00 GMT -> buyer 0xc32575Be004af0843D995D6139BBeB9F8085D970 at Wed, 02 Mar 2022 08:49:37 GMT"
   }
 }
 ```
-
