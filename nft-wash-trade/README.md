@@ -4,7 +4,7 @@
 
 ## Description
 
-Inspired by the research paper: [NFT Wash Trading: Quantifying suspicious behaviour in NFT markets](https://arxiv.org/abs/2202.03866), this agent monitors the following NFT collection's sales on the specified exchange for wash trades:
+Inspired by the research paper: [NFT Wash Trading: Quantifying suspicious behaviour in NFT markets](https://arxiv.org/abs/2202.03866), this agent monitors the following NFT collection's sales on the specified exchange and detects wallet addresses involved in wash trading:
 
 ```javascript
 {
