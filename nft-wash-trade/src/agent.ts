@@ -70,10 +70,12 @@ function checkCycle(transfer: LogDescription, timestamp: number): Finding[] {
         severity: FindingSeverity.Medium,
         type: FindingType.Suspicious,
         metadata: {
-          exchangeContract: nftExchangeAddress,
-          collectionContract: nftCollectionAddress,
-          tokenId: tokenId,
           buyer: address,
+          tokenId: tokenId,
+          collectionContract: nftCollectionAddress,
+          collectionName: nftCollectionName,
+          exchangeContract: nftExchangeAddress,
+          exchangeName: nftExchangeName,
           salesCountSoFar: `${count}`,
           firstSaleTimestampTracked: getDateTime(firstSaleAt),
           salesHistory: `${nftReport.salesHistory.map(s => `buyer ${s.buyer} at ${getDateTime(s.saleAt)}`).join(" -> ")}`
