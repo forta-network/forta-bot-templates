@@ -15,6 +15,4 @@ describe("handleTransaction", () => {
     expect(findings).toStrictEqual([]);
     expect(mockTxEvent.filterLog).toHaveBeenCalledTimes(2);
   })
-
-  // TODO: Add moar tests
 })

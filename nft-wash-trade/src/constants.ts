@@ -7,6 +7,7 @@ export const EXCHANGE_TRADE_EVENTS: Record<string, string> = {
   "OpenSea": "event OrdersMatched(bytes32 buyHash, bytes32 sellHash, address indexed maker, address indexed taker, uint price, bytes32 indexed metadata)"
 }
 
+// Most wash trades are executed within 30 days (Section 4 Results in https://arxiv.org/pdf/2202.03866.pdf)
 export const MAX_AGE = 24 * 60 * 60 * 30 // 30 days
 export const MAX_DEPTH = 50
 export const MAX_SALES = 1
