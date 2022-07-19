@@ -27,7 +27,16 @@ import {
 } from './constants'
 
 // load config file
-import config from './agent-config.json';
+const loadConfig = () => {
+  try {
+    return require('./bot-config.json');
+  } catch (e) {
+    // test environment
+    return require('../bot-config.json');
+  }
+};
+
+const config = loadConfig();
 
 // load configuration data from agent config file
 const {

@@ -1,10 +1,10 @@
-# NFT Wash Trade Agent
+# NFT Wash Trade detection bot
 
-:star2: Check out `SETUP.md` on how to customize and deploy your own NFT wash trade agent!
+:star2: Check out `SETUP.md` on how to customize and deploy your own NFT wash trade detection bot!
 
 ## Description
 
-Inspired by the research paper: [NFT Wash Trading: Quantifying suspicious behaviour in NFT markets](https://arxiv.org/abs/2202.03866), this agent monitors the following NFT collection's sales on the specified exchange and detects wallet addresses involved in wash trading:
+Inspired by the research paper: [NFT Wash Trading: Quantifying suspicious behaviour in NFT markets](https://arxiv.org/abs/2202.03866), this bot monitors the following NFT collection's sales on the specified exchange and detects wallet addresses involved in wash trading:
 
 ```javascript
 {
@@ -14,7 +14,7 @@ Inspired by the research paper: [NFT Wash Trading: Quantifying suspicious behavi
 }
 ```
 
-More specifically, the agent detects wallet addresses that bought the same Meebits NFT more than once on the LooksRare exchange.
+More specifically, the bot detects wallet addresses that bought the same Meebits NFT more than once on the LooksRare exchange.
 
 ## Supported Chains
 
@@ -29,13 +29,13 @@ More specifically, the agent detects wallet addresses that bought the same Meebi
 
 ## Scope
 
-- Only the latest 50 sales for an NFT will be tracked. Old sales will be removed to make room for new sales. 
+- Only the latest 50 sales for an NFT will be tracked. Old sales will be removed to make room for new sales.
 - If the last NFT sale is over 30 days old, old sales history will be wiped for that particular NFT.
-- Maximum of 100,000 NFTs with the latest sales will be tracked. NFT with the least activity will be removed to make room for NFT with latest sales. 
+- Maximum of 100,000 NFTs with the latest sales will be tracked. NFT with the least activity will be removed to make room for NFT with latest sales.
 
 ## Test Data
 
-The agent behavior can be verified with the following list of transactions:
+The bot behavior can be verified with the following list of transactions:
 
 ```bash
 $ npm run tx 0xd033cb4b4609b47c224d6143ee7e9102ec9df74a6b196a5e72ed3622f1c103d8,0x2719a320a6987b98c80efacca0f8bdc9202755533ea72249f2d1be715ddecf0d,0x8723e406aa35e1a6e2e10bfa6b93ea7c074d8a4c480adb1b6bc3418d5e76bdff
