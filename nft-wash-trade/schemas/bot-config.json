@@ -1,9 +1,9 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema",
-    "$id": "https://github.com/forta-protocol/forta-agent-templates/nft-wash-trade/schemas/agent-config.json",
+    "$id": "https://github.com/forta-protocol/forta-bot-templates/nft-wash-trade/schemas/bot-config.json",
     "type": "object",
-    "title": "Nft Wash Trade Agent Config",
-    "description": "Agent configuration file to monitor wash trades of a specific NFT collection on specified exchange.",
+    "title": "Nft Wash Trade Bot Config",
+    "description": "Bot configuration file to monitor wash trades of a specific NFT collection on specified exchange.",
     "required": [
         "nftCollectionName",
         "nftCollectionAddress",

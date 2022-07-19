@@ -1,10 +1,10 @@
 {
   "name": "nft-wash-trade",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "chainIds": [
     1
   ],
-  "description": "Forta Agent that detects NFT Wash Trades",
+  "description": "Forta Bot that detects NFT Wash Trades",
   "scripts": {
     "build": "tsc",
     "start": "npm run start:dev",
@@ -20,7 +20,7 @@
     "enable": "forta-agent enable",
     "keyfile": "forta-agent keyfile",
     "test": "jest",
-    "validate-config": "npm run build && ajv validate -s schemas/agent-config.json -d src/agent-config.json"
+    "validate-config": "npm run build && ajv validate -s schemas/bot-config.json -d bot-config.json"
   },
   "dependencies": {
     "bignumber.js": "^9.0.1",
